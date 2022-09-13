@@ -13,6 +13,11 @@
     flex-wrap: wrap;
 }
 
+.menu-mobile {
+    display: none;
+
+}
+
 header {
     background-color: white;
     padding: 20px 0;
@@ -131,8 +136,69 @@ section.main {
     text-transform: uppercase;
 }
 
-.chamada-sobre p{
+.menu-itens {
+    position: relative;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid blue;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu-itens.show{
+    opacity: 1;
+
+}
+
+.menu-itens.hidde{
+    opacity: 0;
+
+}
+
+.menu-itens a{
+    display: block;
+    text-decoration: none;
+    color: #2092e9;
+}
+
+section.programas-sociais {
+    margin: 50px 50px;
+}
+
+section.programas-sociais {
+    padding: 40px 0;
+}
+
+.programas-sociais-img {
+    width: 50%;
+}
+
+.programas-sociais-img img{
+    max-width: 100%;
+}
+.programas-sociais-content {
+    width: 50%;
+    padding: 0 50px;
+}
+
+.programas-sociais-content h2{
+    color: #2092e9;
+    margin-bottom: 20px;
+}
+
+.programas-sociais-content p{
+    color: #444444;
     font-size: 14px;
+    margin-bottom: 14px;
+}
+
+
+.chamada-sobre p{
+    font-size: 16px;
     color: gray;
     margin: 10px 0;
 }
@@ -156,13 +222,61 @@ section.main {
 
 .conteudo-sobre i{
     color: #2092e9;
+}
 
+section.programas-sociais {
+    background-color: #f8fbfe;
+    padding: 8px 0;
+}
+
+section.obras-basicas {
+    background-color: #f8fbfe;
+    padding: 20px 0;
+}
+
+.obras-basicas-single{
+    width: 17%;
+    margin-right: 3%;
+    text-align: center;
+    color: #2092e9;
+    padding: 10px;
+}
+.obras-basicas h2 {
+    font-size: 30px;
+    color: #2092e9;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.obras-basicas p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+}
+
+.obras-basicas-single img{
+    max-width: 70%;
 }
 
 @media screen and (max-width: 768px) {
     .atividades-single{
         width: 100%;
         margin-bottom: 20px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-mobile {
+        width: 100%;
+        text-align: right;
+        display: block;
+    }
+    .menu-mobile i{
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
     }
 
     .conteudo-sobre p{
