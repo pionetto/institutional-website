@@ -75,13 +75,13 @@ section.main {
 
 .main__cta {
     width: 100%;
-    margin: 60px 0;
+    margin: 30px 0;
     text-align: center;
 }
 
 .main__cta h2 {
     color: #2092e9;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .main__cta p {
